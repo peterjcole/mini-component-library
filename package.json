@@ -12,8 +12,8 @@
     "styled-components": "5.2.1"
   },
   "scripts": {
-    "storybook": "start-storybook -p 6006 -s public",
-    "start": "start-storybook -p 6006 -s public"
+    "storybook": "start-storybook -p 6006 -s src/public",
+    "start": "start-storybook -p 6006 -s src/public"
   },
   "eslintConfig": {
     "extends": [
