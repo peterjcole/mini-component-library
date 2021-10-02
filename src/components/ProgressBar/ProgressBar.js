@@ -3,7 +3,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 import {COLORS} from '../../constants';
-import VisuallyHidden from '../VisuallyHidden';
 
 const ProgressBar = ({value, size}) => {
 
@@ -29,18 +28,6 @@ const sizes = {
   }
 }
 
-const GreyBar = styled.div`
-  width: ${props => 100 - props.value}%;
-  height: 100%;
-  background-color: ${COLORS.transparentGray15};
-  float: right;
-`
-
-const BlueBar = styled.div`
-  //width: 100%;
-  height: 100%;
-  background-color: ${COLORS.primary};
-`
 
 const Bar = styled.div`
   width: 370px;
@@ -48,7 +35,7 @@ const Bar = styled.div`
   border-radius: ${props => sizes[props.size].borderRadius};
   padding: ${props => props.size === 'large' ? '4px' : 0};
   background-color: ${COLORS.transparentGray15};
-  box-shadow: inset 0px 2px 4px ${COLORS.transparentGray35};
+  box-shadow: inset 0 2px 4px ${COLORS.transparentGray35};
 `
 
 const InnerBarFillArea = styled.div`
